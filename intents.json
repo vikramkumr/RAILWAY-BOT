@@ -1,0 +1,107 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "bye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day" , "bye" , "thanks" , "thankyou"],
+         "responses": ["I hope I resolve your query successfully !! Have a nice day"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "responses": ["I'm a machine I don't have age!", "Machines don't have age"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["I am Railway Support bot.", "I'm bot created by Hritik Maheshwari!", "I'm bot , here to help you"],
+         "context_set": ""
+        },
+		{"tag": "means",
+		"patterns": ["what is pnr in railway","what is pnr" , "what pnr means" , "pnr meaning" ,"what does pnr means", "what is the term pnr","what is the term pnr","what is the term pnr" , "what is the term pnr" , "what pnr means" ,"what pnr means" ,"what pnr means"],
+		"responses": ["PNR - Passenger Name Record is an unique number that recognizes your booking." , "PNR stands for Passenger Name Record" , "PNR is an unique number thats recognize your booking" ,"Passenger Name Record is an unique identification number that recognizes booking"],
+		"context_set": ""
+		},
+		{"tag": "use",
+		"patterns": ["where does pnr use","what are the uses of pnr" , "what is usage of pnr" , "what are usage of pnr" , "what are uses of pnr"],
+		"responses": ["pnr shows the status of booking whether it is confirmed or not" , "PNR is utilized to get the Confirmed or Waitlisted status of your booking along with the coach and seat numbers." , "PNR helps passengers to check whether their tickets got confirmed or not."],
+		"context_set": ""
+		},
+		{
+		"tag" : "status on sms",
+		"patterns" : ["How to get pnr status via sms?" , "how to know pnr status" , "pnr status on sms" , "how to know pnr status through sms" , "how to get pnr status" , "how to get pnr status via sms" ,  "get pnr status via sms"],
+		"responses" : ["You could check PNR Status of your ticket via SMS on mobile by sending out SMS to any of below numbers in the follow ing manner.\nPNR <10-digit PNR Number> to 139\n PNR <10-digit PNR Number> to 54959\n PNR <10-digit PNR number> to 5676747\n IRPNR <10-digit PNR Number> to 57886"],
+		"context_set" : ""
+		},
+		{
+		"tag" : "status on call",
+		"patterns" :["how to get pnr status on call?" , "how to know pnr status on call" , "how to know pnr status on phone call" , "get pnr status on call" , "how to get pnr status via phone call" , "know pnr status via call"],
+		"responses" : ["You could call 139 to check PNR Status of your ticket and other details." , "You can make call on 139 to get your pnr status"],
+		"context_set": ""
+		},
+		{
+		"tag": "error",
+		"patterns" : ["why i am getting error while checking pnr status" , "I am getting error while checking pnr status" , "error while checking pnr status" , "error during checking pnr status" , "problem in checking pnr status" , "I am getting error while checking pnr status on irctc"],
+		"responses": ["1. You entered wrong PNR number(Please check PNR then try again ).\n2. Web servers are down.(In this case check again couple of minutes).\n3. Indian Railways Servers Maintenance happens at 11:30pm - 12:30am (Check again after 12:30 AM)."],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal second(sitting)",
+		"patterns" : ["what are tatkal charges for second sitting" , "tatkal charges for second sitting" , "what are second sitting tatkal charges" , "second sitting tatkal cost"],
+		"responses" : ["Minumum Tatakal Charges(in Rs) : 10 \nMaximum Tatkal Charges(in Rs) : 15"],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal sleeper",
+		"patterns" : ["what are tatkal charges for sleeper" , "tatkal charges for sleeper" , "what are sleeper tatkal charges" , "sleeper tatkal cost"  , "sleeper tatkal charges"],
+		"responses" : ["Minimum Tatkal Charges(in Indian Rupees) : 90 \nMaximum Tatkal Charges(in Indian Rupees) : 175"],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal ac chair car",
+		"patterns" : ["what are tatkal charges for ac chair car" , "tatkal charges for ac chair car" , "what are ac chair car charges" , "ac chair car cost"  , "ac chair car charges"],
+		"responses" : ["Minimum Tatkal Charges(in Indian Rupees) : 100 \nMaximum Tatkal Charges(in Indian Rupees) : 200"],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal ac 3 tier",
+		"patterns" : ["what are tatkal charges for ac 3 tier" , "tatkal charges for ac 3 tier" , "what are ac 3 tier tatkal charges" , "ac 3 tier tatkal cost"  , "ac 3 tier tatkal charges"],
+		"responses" : ["Minimum Tatkal Charges(in Indian Rupees) : 250 \nMaximum Tatkal Charges(in Indian Rupees) : 350"],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal ac 2 tier",
+		"patterns" : ["what are tatkal charges for ac 2 tier" , "tatkal charges for ac 2 tier" , "what are ac 2 tier tatkal charges" , "ac 2 tier tatkal cost"  , "ac 2 tier tatkal charges"],
+		"responses" : ["Minimum Tatkal Charges(in Indian Rupees) : 300 \nMaximum Tatkal Charges(in Indian Rupees) : 400"],
+		"context_set" : ""
+		},
+		{"tag" : "tatkal booking",
+		"patterns" : ["what is tatkal booking and how it is done" , "how to done tatkal booking" , "what is tatkal booking" , "how to book ticket in tatkal"  , "what is tatkal booking and how to do it" , "tatkal booking meaning"],
+		"responses" : ["Tatkal booking is meant for immediate travel plans.\nTatkal booking for every train opens 1 days in advance at 10 am for AC (Air conditioned Class) and at 11 Am for Non-Ac.\nYou can book tatkal e-ticket online irctc.co.in or any other online booking agency.\nEvery train and class has a defined tatkal quota and it varies from station to station.\nMany of the trains does not have tatkal category.\nYou have to select the Tatkal check box in the 'Plan my travel' page along with other details for booking tatkal ticket."],
+		"context_set" : ""
+		},
+		{
+		"tag" : "tatkal window",
+		"patterns" : ["when tatkal booking open" , "when I can book ticket in tatkal" , "when tatkal window is open" , "when tatkal booking starts"],
+		"responses" : ["Tatkal booking for any train open 1 day before at 10 AM for AC and at 11 AM for Non-Ac"],
+		"context_set" : ""
+		},
+		{
+		"tag" : "okay",
+		"patterns" : ["okay" , "ok" , "k" , "yes"],
+		"responses":["Anything else?" ,"Need more support ?"],
+		"context_set" : ""
+		},
+		{
+		"tag" : "know my ticket",
+		"patterns" : ["is my ticket confirm" , "give me my ticket confirmation info","what about my ticket confirmation"],
+		"responses":["Please provide me your PNR" ,"Can I know your PNR"],
+		"context_set" : ""
+		},
+		{
+		"tag" : "train arrival",
+		"patterns" : ["when my train will arrive","my train will get late","my train is on time or not"],
+		"responses":["Please provide me train number"],
+		"context_set" : ""
+		}
+		
+		
+   ]
+}
